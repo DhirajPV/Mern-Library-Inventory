@@ -10,6 +10,10 @@ const app = express();
 
 app.use(bodyParser.json());
 
+var cors = require('cors')
+
+app.use(cors())
+
 const db = require('./config/db').mongoURI;
 
 mongoose.set('useUnifiedTopology', true);

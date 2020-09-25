@@ -17,6 +17,10 @@ const BookSchema = new Schema ({
       updated_date: {
         type: Date,
         default: Date.now
+      },
+      img: {
+        type: String,
+        default: "https://bitsofco.de/content/images/2018/12/broken-1.png"
       }
     });
     
