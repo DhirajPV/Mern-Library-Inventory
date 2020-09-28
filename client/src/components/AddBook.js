@@ -42,29 +42,26 @@ export class AddBook extends Component {
     
     render() {
         return (
-            <div>
-            <Form style={{ paddingLeft: 50, paddingRight: 50, alignItems: "center"}} onSubmit={this.onSubmit} >
-                <FormGroup>
-                    <Label for="title">Title</Label>
-                    <Input className="w-25" type="text" name="title" id="title" onChange={this.onChange} />
-                </FormGroup>
-                <FormGroup>
-                    <Label for="author">Author</Label>
-                    <Input className="w-25" type="text" name="author" onChange={this.onChange} />
-                </FormGroup>
-                <FormGroup>
-                    <Label for="isbn">ISBN</Label>
-                    <Input className="w-25" type="text" name="isbn" onChange={this.onChange} />
-                </FormGroup>
-                <FormGroup>
-                    <Label for="img">Image Link</Label>
-                    <Input className="w-25" type="text" name="img" onChange={this.onChange} />
-                </FormGroup>
-                <Button
-                    color="dark" className="w-25"
-                    style={{marginTop: '2rem', align: "centre", textAlign: "center"}}
-                    block>Add Book</Button>
-            </Form>
+            <div style={{ textAlign: "center"}}>
+                <Form style={{ display: "inline-block", width: "25%" }} onSubmit={this.onSubmit} >
+                    <FormGroup>
+                        <Label for="title">Title</Label>
+                        <Input type="text" name="title" id="title" onChange={this.onChange} />
+                    </FormGroup>
+                    <FormGroup>
+                        <Label for="author">Author</Label>
+                        <Input type="text" name="author" onChange={this.onChange} />
+                    </FormGroup>
+                    <FormGroup>
+                        <Label for="isbn">ISBN</Label>
+                        <Input type="text" name="isbn" onChange={this.onChange} />
+                    </FormGroup>
+                    <FormGroup>
+                        <Label for="img">Image Link</Label>
+                        <Input type="text" name="img" onChange={this.onChange} />
+                        </FormGroup>
+                    <Button color="dark" style={{marginTop: '2rem', align: "centre", textAlign: "center"}} block>Add Book</Button>
+                </Form>
             </div>
         )
     }
