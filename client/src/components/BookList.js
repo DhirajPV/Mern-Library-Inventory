@@ -44,10 +44,12 @@ render() {
 
         return (
             <div>
-                <h2> List of Books Available </h2>
-                <Link to="/addBook" className="btn btn-outline-dark">
-                + Add New Book
-                </Link>
+                <div style={{paddingLeft: 50}} >
+                    <h2 > List of Books Available </h2>
+                    <Link to="/addBook" className="btn btn-outline-dark">
+                    Add New Book
+                    </Link>
+                </div>
                 <br></br>
                 <Container className="list">
                     { list }
